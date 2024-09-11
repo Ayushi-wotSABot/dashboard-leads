@@ -1,13 +1,15 @@
-
-import Header from './components/Header';
-import Dashboard from './components/Dashboard';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DashboardLeads from "./components/Leads/DasboardLeads";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <div className=" ">
-      <Header />
-      <Dashboard />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Sidebar />} />
+        <Route path="/leads-dashboard" element={<DashboardLeads />} />
+      </Routes>
+    </Router>
   );
 }
 

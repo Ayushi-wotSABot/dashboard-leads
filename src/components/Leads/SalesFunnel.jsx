@@ -10,7 +10,7 @@ const SalesFunnel = () => {
       {
         label: 'Sales',
         data: [7, 5, 8, 4, 7, 8, 5, 3, 7, 2],
-        backgroundColor: 'rgba(54, 162, 235, 0.6)',
+        backgroundColor: '#002D57',
       },
     ],
   };
@@ -38,7 +38,7 @@ const SalesFunnel = () => {
 
   return (
     <>
-      <h3 className="text-lg font-semibold mb-4 "><strong>SALES FUNNEL</strong></h3>
+      <h3 className="text-lg font-bold mb-4 ">SALES FUNNEL</h3>
       <Bar data={data} options={options} />
     </>
   );
